@@ -1,0 +1,1114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>1j7mebvhb3dq5</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="James Quick/ jamesqquick" id="JsontoC2Array" version="1">JsontoC2Array</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_CSV" version="1">CSV</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors />
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>1280</width>
+        <height>768</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>StartGame</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="BgStart" sid="120987086074699">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="864395496703846" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\งาน\ปี 4\รูปโปรเจค\ไอซ์ [Recovered]-01 - Copy.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="929460034859404">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Touch" sid="154965425426176">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Start" sid="891177992218566">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="185260351857729" speed="5">
+                    <frame duration="1" hotspotX="0.491961" hotspotY="-0.972727" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\start 1280.png">
+                        <collision-poly>
+                            <point x="0.0418006" y="0.0818204" />
+                            <point x="0.491961" y="0.0181813" />
+                            <point x="0.948551" y="0.0636397" />
+                            <point x="0.491961" y="0.990909" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgLoading1" sid="547295866095319">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="114140589734732" speed="5">
+                    <frame duration="1" hotspotX="0.11477" hotspotY="0.228992" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\26963613.jpg">
+                        <collision-poly>
+                            <point x="0.0718574" y="0.239496" />
+                            <point x="0.9501" y="0.245798" />
+                            <point x="0.856288" y="0.817227" />
+                            <point x="0.115768" y="0.813025" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoadingName" sid="878820939689593">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597241071888267" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\LOADING....png">
+                        <collision-poly>
+                            <point x="0.102848" y="0.427632" />
+                            <point x="0.857595" y="0.592105" />
+                            <point x="0.77057" y="0.5" />
+                            <point x="0.102848" y="0.572368" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoadingBG1" sid="419107537372529">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391640553428566" speed="5">
+                    <frame duration="1" hotspotX="0.500956" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\Loading bg.png">
+                        <collision-poly>
+                            <point x="0.00764818" y="0.0526316" />
+                            <point x="0.499044" y="0" />
+                            <point x="0.992352" y="0.0526316" />
+                            <point x="0.992352" y="0.947368" />
+                            <point x="0.499044" y="1" />
+                            <point x="0.00764818" y="0.947368" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LoadingBar1" sid="894219964247275">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\loading bar.png" />
+        </object-type>
+        <object-type name="Browser" sid="383577583403623">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Question1" sid="703852590932874">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="314553751134771" speed="0">
+                    <frame duration="1" hotspotX="0.500634" hotspotY="0.500821" />
+                    <frame duration="1" hotspotX="0.500634" hotspotY="0.500821" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\1คาหนังคาเขา.jpg" />
+                    <frame duration="1" hotspotX="0.500652" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\2ตกกระไดพลอยโจน.jpg" />
+                    <frame duration="1" hotspotX="0.500614" hotspotY="0.500829" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\3จับแแพะชนแกะ.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\4ปลาใหญ่กินปลาเล็ก.jpg" />
+                    <frame duration="1" hotspotX="0.500627" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\5จับปลาสองมือ.jpg" />
+                    <frame duration="1" hotspotX="0.500657" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\6ปิ้งปลาประชดแมว.jpg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\7อ้อยเข้าปากช้าง.jpg" />
+                    <frame duration="1" hotspotX="0.500645" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\8ไก่เห็นตีนงู งูเห็นนมไก่.jpg" />
+                    <frame duration="1" hotspotX="0.50065" hotspotY="0.5" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\9ปอกกล้วยเข้าปาก.jpg" />
+                    <frame duration="1" hotspotX="0.500637" hotspotY="0.500864" original-source="C:\Users\adminja\Downloads\สุภาษิต-20201030T161041Z-001\สุภาษิต\10ใจดีสู้เสือ.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Function" sid="336248160917330">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="AJAX" sid="787358865458058">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="BgGame1" sid="280562864316536">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="667557522907437" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\หน้าเกม-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameQuiz1" sid="589413227614965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="138362644375544" speed="5">
+                    <frame duration="1" hotspotX="2.28116" hotspotY="1.01618" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\Q1-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgQuiz" sid="393317094678119">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="393481729967793" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\เมนู-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitStart" sid="319333776743197">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="477223521986943" speed="5">
+                    <frame duration="1" hotspotX="-4.43257" hotspotY="3.82487" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeGame1" sid="944265952682810">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="250942384249608" speed="5">
+                    <frame duration="1" hotspotX="-1.3677" hotspotY="0.877313" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เวลา-01.png">
+                        <collision-poly>
+                            <point x="0.543772" y="0.00292113" />
+                            <point x="0.826847" y="0.877313" />
+                            <point x="0.174123" y="0.877313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMenuQuiz1" sid="349690965050795">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="900343562667760" speed="0">
+                    <frame duration="1" hotspotX="1.16972" hotspotY="1.33019" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\Q1 ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMenuQuiz2" sid="100621433586712">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="452336281563460" speed="0">
+                    <frame duration="1" hotspotX="-0.221198" hotspotY="1.33019" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\Q2 ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMenuQuiz5" sid="234461117531032">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653919872837748" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="-1.21698" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\Q5 ออ.png">
+                        <collision-poly>
+                            <point x="0.00917431" y="0.188679" />
+                            <point x="0.5" y="0.0188679" />
+                            <point x="0.995413" y="0.179245" />
+                            <point x="0.5" y="0.990566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice11" sid="724202299677295">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="973085513445925" speed="5">
+                    <frame duration="1" hotspotX="1.03226" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\แดง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice21" sid="129688007086350">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="183870688688450" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เขียว ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice31" sid="882592927043307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="740679800484331" speed="5">
+                    <frame duration="1" hotspotX="1.03456" hotspotY="-2.07692" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\น้ำเงิน ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice41" sid="600546149935134">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="898668311498616" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-2.025" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เหลือง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMenuQuiz3" sid="950598633300122">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="121581912038032" speed="5">
+                    <frame duration="1" hotspotX="1.16514" hotspotY="0.0283019" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\Q3 ออ.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMenuQuiz4" sid="591251636634655">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400102550256557" speed="5">
+                    <frame duration="1" hotspotX="-0.225806" hotspotY="0.0283019" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Menu\Q4 ออ.png">
+                        <collision-poly>
+                            <point x="0" y="1" />
+                            <point x="1" y="1" />
+                            <point x="1" y="0" />
+                            <point x="0" y="0" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="CSV" sid="645503633959469">
+            <plugin id="Rex_CSV" />
+        </object-type>
+        <object-type name="TextChoice11" sid="270600011240651">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice21" sid="965605878343175">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice31" sid="912134424034352">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice41" sid="902622664792763">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextScore" sid="210444691474998">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BgScore" sid="256490715100329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="372694960657306" speed="5">
+                    <frame duration="1" hotspotX="0.500618" hotspotY="0.500898" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\Your score.png">
+                        <collision-poly>
+                            <point x="0.0296663" y="0.043088" />
+                            <point x="0.499382" y="0.0197487" />
+                            <point x="0.970334" y="0.043088" />
+                            <point x="0.828183" y="0.499102" />
+                            <point x="0.97157" y="0.958707" />
+                            <point x="0.499382" y="0.982047" />
+                            <point x="0.0284302" y="0.958707" />
+                            <point x="0.169345" y="0.499102" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Array" sid="659492885191511">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type global="1" name="JsontoC2Array" sid="436323388575094">
+            <plugin id="JsontoC2Array" />
+        </object-type>
+        <object-type name="TextTimer1" sid="812984799384850">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BgExit" sid="665599464983697">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="524282997292103" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Exit\หน้าออก-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGameYes" sid="569544788137143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="714579009849711" speed="5">
+                    <frame duration="1" hotspotX="-0.752475" hotspotY="-0.330049" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Exit\ถูก ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGameNo" sid="876563728814169">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="956297827705685" speed="5">
+                    <frame duration="1" hotspotX="1.75862" hotspotY="-0.330049" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Exit\ผิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGame2" sid="695989989623960">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980551399225524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\หน้าเกม-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGame3" sid="546169603611597">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941405654154311" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\หน้าเกม-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGame4" sid="118857637074893">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="581638317560073" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\หน้าเกม-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgGame5" sid="479759846965562">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="303889844659597" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\หน้าเกม-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGame2" sid="206347510004059">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192445853233709" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGame3" sid="787608432177490">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="892040403868590" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGame4" sid="806093102921056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902471793459967" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice14" sid="813608559269460">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="439701038253210" speed="5">
+                    <frame duration="1" hotspotX="1.03226" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\แดง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice24" sid="568109827701515">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="149904374659756" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เขียว ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice34" sid="372390550073943">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="104325895751234" speed="5">
+                    <frame duration="1" hotspotX="1.03456" hotspotY="-2.07692" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\น้ำเงิน ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice44" sid="884576624529633">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="201914615818245" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-2.025" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เหลือง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameQuiz4" sid="995137870723733">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="267276790736376" speed="5">
+                    <frame duration="1" hotspotX="2.22391" hotspotY="0.969737" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\Q4-01.png">
+                        <collision-poly>
+                            <point x="0.630687" y="0.0236843" />
+                            <point x="0.958965" y="0.969737" />
+                            <point x="0.0374665" y="0.969737" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice12" sid="528596923140013">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983837578765666" speed="5">
+                    <frame duration="1" hotspotX="1.03226" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\แดง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice22" sid="801319932837993">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="324134777889861" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เขียว ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice32" sid="854334968555731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="760711856290320" speed="5">
+                    <frame duration="1" hotspotX="1.03456" hotspotY="-2.07692" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\น้ำเงิน ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice42" sid="292568877933856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="786108721324452" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-2.025" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เหลือง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameQuiz2" sid="651639199899466">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="568714871916318" speed="5">
+                    <frame duration="1" hotspotX="2.24495" hotspotY="1.09682" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\Q2-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameQuiz3" sid="853439778007892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="379476092262150" speed="5">
+                    <frame duration="1" hotspotX="2.13629" hotspotY="0.969974" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\Q3-01.png">
+                        <collision-poly>
+                            <point x="0.609029" y="0.0221932" />
+                            <point x="0.864566" y="0.969974" />
+                            <point x="0.125213" y="0.969974" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice13" sid="112446046595421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="700450390310317" speed="5">
+                    <frame duration="1" hotspotX="1.03226" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\แดง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice23" sid="812100046858560">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="406501803656617" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เขียว ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice33" sid="801899381850391">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="830330923157762" speed="5">
+                    <frame duration="1" hotspotX="1.03456" hotspotY="-2.07692" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\น้ำเงิน ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice43" sid="696101862610966">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="781721426206823" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-2.025" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เหลือง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGame1" sid="496388882905789">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="883517065693866" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGameMenu" sid="868360189126326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385640680652012" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeGame2" sid="846056784846399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269773292427247" speed="5">
+                    <frame duration="1" hotspotX="-1.3677" hotspotY="0.877313" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เวลา-01.png">
+                        <collision-poly>
+                            <point x="0.543774" y="0.00292113" />
+                            <point x="0.826848" y="0.877313" />
+                            <point x="0.174125" y="0.877313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeGame3" sid="968801798261131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="290583659519944" speed="5">
+                    <frame duration="1" hotspotX="-1.3677" hotspotY="0.877313" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เวลา-01.png">
+                        <collision-poly>
+                            <point x="0.543774" y="0.00292113" />
+                            <point x="0.826848" y="0.877313" />
+                            <point x="0.174125" y="0.877313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeGame4" sid="566271311898893">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="845763200327783" speed="5">
+                    <frame duration="1" hotspotX="-1.3677" hotspotY="0.877313" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เวลา-01.png">
+                        <collision-poly>
+                            <point x="0.543774" y="0.00292113" />
+                            <point x="0.826848" y="0.877313" />
+                            <point x="0.174125" y="0.877313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NumberQuestion1" sid="663276267516019">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560280883102755" speed="0">
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q1 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q2 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q3 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q4 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q5 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q6 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q7 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q8 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q9 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q10 ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextChoice12" sid="663479780522439">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice22" sid="910355095502354">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice32" sid="303364049460649">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice42" sid="239237510996570">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextTimer2" sid="393273865968607">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextTimer3" sid="133738912951138">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextTimer4" sid="313832245657767">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice33" sid="467881056573644">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice13" sid="109262235059538">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice23" sid="732526879989697">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice43" sid="722800005206600">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice14" sid="980148556227439">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice24" sid="206850104557704">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice34" sid="558637952301363">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice44" sid="896983019269120">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Question2" sid="236784597778367">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618665909207164" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\1เม่น1.png" />
+                    <frame duration="1" hotspotX="0.501887" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\2ช้าง2.png" />
+                    <frame duration="1" hotspotX="0.502591" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\3โลมา3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\4หอยทาก4.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\5เต่าทอง5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\6หมู6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\7นก7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\8เต่า8.png" />
+                    <frame duration="1" hotspotX="0.502762" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\9ยีราฟ9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สัตว์ใหม่\10หนอน10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice15" sid="969199984908517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456372580698442" speed="5">
+                    <frame duration="1" hotspotX="1.03226" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\แดง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice25" sid="647488733335522">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653109154974009" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-0.982301" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เขียว ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice35" sid="817879129622857">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903640244514855" speed="5">
+                    <frame duration="1" hotspotX="1.03456" hotspotY="-2.07692" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\น้ำเงิน ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Choice45" sid="177576558751843">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="298901564114862" speed="5">
+                    <frame duration="1" hotspotX="-0.0345622" hotspotY="-2.025" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เหลือง ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitGame5" sid="315148724923704">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="256044484092451" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="GameQuiz5" sid="767611430946764">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="814674706599658" speed="5">
+                    <frame duration="1" hotspotX="2.21802" hotspotY="1.29131" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\Q5-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TimeGame5" sid="972106978401399">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="322514957062503" speed="5">
+                    <frame duration="1" hotspotX="-1.3677" hotspotY="0.877313" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\เวลา-01.png">
+                        <collision-poly>
+                            <point x="0.543774" y="0.00292113" />
+                            <point x="0.826848" y="0.877313" />
+                            <point x="0.174125" y="0.877313" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextChoice15" sid="559828698386100">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice25" sid="885313068182986">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice35" sid="714872949022424">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextChoice45" sid="402956880288292">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextTimer5" sid="728989421123894">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Question5" sid="589305912235388">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="141589686118125" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501109" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\1กอล์ฟ1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\2ตะกร้อ2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\3เทนนิส3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\4ปั่นจักรยาน4.png" />
+                    <frame duration="1" hotspotX="0.501166" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\5ปิงปอง5.png" />
+                    <frame duration="1" hotspotX="0.500967" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\6เปตอง6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\7ฟุตบอล7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\8วอลเลย์บอล8.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\9ว่ายน้ำ9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\กีฬาใหม่\10สนุกเกอร์10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Question3" sid="489718297566619">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957530341129363" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\1ลูกโลก1.png" />
+                    <frame duration="1" hotspotX="0.501348" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\2โต๊ะ2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\3มีดทำครัว3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\4ขวดน้ำ4.png" />
+                    <frame duration="1" hotspotX="0.501805" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\5ถ้วยกาแฟ5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\6ถังขยะ6.png" />
+                    <frame duration="1" hotspotX="0.501266" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\7กระดานดำ7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\8กระเป๋าเป้8.png" />
+                    <frame duration="1" hotspotX="0.501272" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\9เครื่องเขียน9.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\สิ่งของใหม่\10หนังสือพิมพ์10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackGame1" sid="342747825205869">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="671691136528199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\back.png">
+                        <collision-poly>
+                            <point x="0.162791" y="0.162791" />
+                            <point x="0.5" y="0.0232558" />
+                            <point x="0.837209" y="0.162791" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.837209" y="0.837209" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.162791" y="0.837209" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackGame2" sid="840837366300991">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="934928207577321" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\back.png">
+                        <collision-poly>
+                            <point x="0.162791" y="0.162791" />
+                            <point x="0.5" y="0.0232558" />
+                            <point x="0.837209" y="0.162791" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.837209" y="0.837209" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.162791" y="0.837209" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackGame3" sid="679386253949412">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837498081422194" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\back.png">
+                        <collision-poly>
+                            <point x="0.162791" y="0.162791" />
+                            <point x="0.5" y="0.0232558" />
+                            <point x="0.837209" y="0.162791" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.837209" y="0.837209" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.162791" y="0.837209" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackGame4" sid="354203669364544">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="400863948453770" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\back.png">
+                        <collision-poly>
+                            <point x="0.162791" y="0.162791" />
+                            <point x="0.5" y="0.0232558" />
+                            <point x="0.837209" y="0.162791" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.837209" y="0.837209" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.162791" y="0.837209" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BackGame5" sid="714385120077948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869339293422050" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\back.png">
+                        <collision-poly>
+                            <point x="0.162791" y="0.162791" />
+                            <point x="0.5" y="0.0232558" />
+                            <point x="0.837209" y="0.162791" />
+                            <point x="0.976744" y="0.5" />
+                            <point x="0.837209" y="0.837209" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.162791" y="0.837209" />
+                            <point x="0.0232558" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BgScoreMain" sid="641696084238276">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="358595823872351" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\ไอซ์ [Recovered] (2)-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Question4" sid="598251331431925">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="11" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="501595579428804" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\1แอร์1.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\2ทีวี2.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\3เครื่องซักผ้า3.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\4ไมโครเวฟ4.png" />
+                    <frame duration="1" hotspotX="0.501672" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\5คอมพิวเตอร์5.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\6พัดลม6.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\7ไดร์เป่าผม7.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\8ตู้เย็น8.png" />
+                    <frame duration="1" hotspotX="0.501199" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\9กาต้มน้ำร้อน9.png" />
+                    <frame duration="1" hotspotX="0.501333" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\สุภาษิต\เครื่องใช้\10 เตารีด 10.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ExitScore" sid="901669899281720">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="737518939016666" speed="5">
+                    <frame duration="1" hotspotX="-4.29897" hotspotY="3.74227" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Game\ปิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonBackToMenu" sid="830930707391262">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="269009753626235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\menu ออ.png">
+                        <collision-poly>
+                            <point x="0.0314465" y="0.0909091" />
+                            <point x="0.5" y="0" />
+                            <point x="0.968553" y="0.0909091" />
+                            <point x="1" y="0.5" />
+                            <point x="0.971698" y="0.918182" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0314465" y="0.909091" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TrueGame" sid="529869389521482">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="907900400028841" speed="5">
+                    <frame duration="1" hotspotX="-0.752475" hotspotY="-0.330049" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Exit\ถูก ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FalseGame" sid="734859017821377">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="829762335594805" speed="5">
+                    <frame duration="1" hotspotX="1.75862" hotspotY="-0.330049" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\game menu exit\Exit\ผิด ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NumberQuestion2" sid="150648449054131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="414629450028776" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q1 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q2 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q3 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q4 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q5 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q6 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q7 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q8 ออ.png" />
+                    <frame duration="1" hotspotX="0.501299" hotspotY="0.504587" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\ดาวโหลด\Q9 ออ.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="256030371203526">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="ButtonSound" sid="187153772390179">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="773114299467191" speed="0">
+                    <frame duration="1" hotspotX="-4.43363" hotspotY="2.86842" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\2-01 ออ เปิดเสียง.png" />
+                    <frame duration="1" hotspotX="-4.43363" hotspotY="2.86842" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\2-01 ออ ปิดเษียง.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ButtonMusic" sid="689022117727391">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="173348756779462" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\music ออ.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Admin\Desktop\โปรเจคของจริง\รูปโปรเจค\music ออ ปิดเสียง.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1875" />
+                            <point x="0.5" y="0.0625" />
+                            <point x="0.8125" y="0.1875" />
+                            <point x="0.9375" y="0.5" />
+                            <point x="0.8125" y="0.8125" />
+                            <point x="0.5" y="0.9375" />
+                            <point x="0.1875" y="0.8125" />
+                            <point x="0.0625" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>StartGame.xml</layout>
+        <layout>MenuMode.xml</layout>
+        <layout>LoadingGame 1.xml</layout>
+        <layout>LoadingGame 2.xml</layout>
+        <layout>LoadingGame 3.xml</layout>
+        <layout>LoadingGame 4.xml</layout>
+        <layout>LoadingGame 5.xml</layout>
+        <layout>GameQuiz1.xml</layout>
+        <layout>GameQuiz2.xml</layout>
+        <layout>GameQuiz3.xml</layout>
+        <layout>GameQuiz4.xml</layout>
+        <layout>GameQuiz5.xml</layout>
+        <layout>Score.xml</layout>
+        <layout>Exit.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event StartGame.xml</event-sheet>
+        <event-sheet>Event GameQuiz1.xml</event-sheet>
+        <event-sheet>Event LoadingGame1.xml</event-sheet>
+        <event-sheet>Event MenuMode.xml</event-sheet>
+        <event-sheet>Event Score.xml</event-sheet>
+        <event-sheet>Event Exit.xml</event-sheet>
+        <event-sheet>Event GameQuiz2.xml</event-sheet>
+        <event-sheet>Event GameQuiz3.xml</event-sheet>
+        <event-sheet>Event GameQuiz4.xml</event-sheet>
+        <event-sheet>Event GameQuiz5.xml</event-sheet>
+        <event-sheet>Event LoadingGame2.xml</event-sheet>
+        <event-sheet>Event LoadingGame3.xml</event-sheet>
+        <event-sheet>Event LoadingGame4.xml</event-sheet>
+        <event-sheet>Event LoadingGame5.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="2" />
+        <global-instance type="Touch" uid="3">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Browser" uid="12" />
+        <global-instance type="Function" uid="6" />
+        <global-instance type="AJAX" uid="11" />
+        <global-instance type="Audio" uid="137">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="true.m4a" />
+        <file name="true.ogg" />
+        <file name="false.m4a" />
+        <file name="false.ogg" />
+    </sounds-folder>
+    <music-folder>
+        <file name="music.m4a" />
+        <file name="music.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

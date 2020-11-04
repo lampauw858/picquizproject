@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event LoadingGame5</name>
+    <events>
+        <variable constant="0" name="scriptURL5" sid="564815556445584" static="0" type="text">https://script.google.com/macros/s/AKfycbxJi-EW_RbsUYbfhRFnehDYaq3C0NBZ78lo_HXn6sB2svMk3pOt/exec</variable>
+        <event-block sid="453482062839254">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="807874067178291" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="776142801856081" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadData&quot;</param>
+                    <param id="1" name="URL">scriptURL5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="660454384940517">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="816714687591970" type="System" />
+                <condition id="-5" name="Compare width" sid="787733190756779" type="LoadingBar1">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Width">500</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-5" name="Set width" sid="682548242104037" type="LoadingBar1">
+                    <param id="0" name="Width">LoadingBar1.Width+2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="139556661650417">
+            <conditions>
+                <condition id="0" name="On completed" sid="549968118206342" type="AJAX">
+                    <param id="0" name="Tag">&quot;loadData&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="106446838788164" type="System">
+                    <param id="0" name="Layout">GameQuiz5</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

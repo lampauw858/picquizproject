@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event GameQuiz4</name>
+    <events>
+        <variable constant="0" name="question4" sid="334813344525208" static="0" type="number">1</variable>
+        <variable constant="0" name="countdown4" sid="640604215014474" static="0" type="number">60</variable>
+        <variable constant="0" name="score4" sid="370721498526113" static="0" type="number">0</variable>
+        <variable constant="0" name="timer4" sid="391424965183384" static="0" type="number">0</variable>
+        <variable constant="0" name="correctAnswer4" sid="791679206101653" static="0" type="text"></variable>
+        <event-block sid="101421991683161">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="476042620173574" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="217224435954741" type="System">
+                    <param id="0" name="Variable">score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="11" name="Load" sid="572846538984309" type="Array">
+                    <param id="0" name="JSON">JsontoC2Array.ConvertJSON(AJAX.LastData)</param>
+                </action>
+                <action id="0" name="Set text" sid="864070819060398" type="TextChoice14">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="904441214329054" type="TextChoice24">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="264668617722956" type="TextChoice34">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="0" name="Set text" sid="234107924228685" type="TextChoice44">
+                    <param id="0" name="Text">&quot;&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="147891442911370" type="TrueGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="-15" name="Set visible" sid="457618738308771" type="FalseGame">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="0" name="Call function" sid="101670173376858" type="Function">
+                    <param id="0" name="Name">&quot;loadQuestion&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="339509738007652">
+            <conditions>
+                <condition id="0" name="On function" sid="482343514969963" type="Function">
+                    <param id="0" name="Name">&quot;loadQuestion&quot;</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <variable constant="0" name="numbQ" sid="151920383489349" static="0" type="number">0</variable>
+                <event-block sid="548928018483380">
+                    <conditions>
+                        <condition id="6" inverted="1" name="Is empty" sid="261858763826698" type="Array" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="773305776668878" type="NumberQuestion1">
+                            <param id="0" name="Frame number">question4</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="988395525876137" type="System">
+                            <param id="0" name="Variable">numbQ</param>
+                            <param id="1" name="Value">int(random(Array.Width))</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="804366086492562" type="System">
+                            <param id="0" name="Variable">countdown4</param>
+                            <param id="1" name="Value">60</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="645972747347146" type="Question4">
+                            <param id="0" name="Frame number">Array.At(numbQ,0)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="560118505409138" type="TextChoice14">
+                            <param id="0" name="Text">Array.At(numbQ,1)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="620048069572655" type="TextChoice24">
+                            <param id="0" name="Text">Array.At(numbQ,2)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="485271016074322" type="TextChoice34">
+                            <param id="0" name="Text">Array.At(numbQ,3)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="263974438827134" type="TextChoice44">
+                            <param id="0" name="Text">Array.At(numbQ,4)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="791178048711622" type="System">
+                            <param id="0" name="Variable">correctAnswer4</param>
+                            <param id="1" name="Value">Array.At(numbQ,5)</param>
+                        </action>
+                        <action id="9" name="Delete" sid="621672113790334" type="Array">
+                            <param id="0" name="Index">numbQ</param>
+                            <param id="1" name="Axis">0</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="364477765716650" type="System">
+                            <param id="0" name="Variable">question4</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="377607964570287">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="367757285437343" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="953819531241271" type="System">
+                            <param id="0" name="Layout">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="694979158320401">
+            <conditions>
+                <condition id="3" name="On touched object" sid="815969253221356" type="Touch">
+                    <param id="0" name="Object">TextChoice14</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="707477220405203" type="Choice14">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="721347955116440" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="974886395325225" type="Choice14">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Call function" sid="188903094225998" type="Function">
+                    <param id="0" name="Name">&quot;checkAnswer&quot;</param>
+                    <param id="1" name="Parameter {n}">TextChoice14.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="260328665787905">
+            <conditions>
+                <condition id="3" name="On touched object" sid="958459724156708" type="Touch">
+                    <param id="0" name="Object">TextChoice24</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="329562247661339" type="Choice24">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="668600559247230" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="369449685825385" type="Choice24">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Call function" sid="730119787830146" type="Function">
+                    <param id="0" name="Name">&quot;checkAnswer&quot;</param>
+                    <param id="1" name="Parameter {n}">TextChoice24.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="238139520877992">
+            <conditions>
+                <condition id="3" name="On touched object" sid="249005071592342" type="Touch">
+                    <param id="0" name="Object">TextChoice34</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="275765597379520" type="Choice34">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="794365328095918" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="988372824257538" type="Choice34">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Call function" sid="657419107269587" type="Function">
+                    <param id="0" name="Name">&quot;checkAnswer&quot;</param>
+                    <param id="1" name="Parameter {n}">TextChoice34.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="761491358204542">
+            <conditions>
+                <condition id="3" name="On touched object" sid="378687204912309" type="Touch">
+                    <param id="0" name="Object">TextChoice44</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="390716440691405" type="Choice44">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="799883616720615" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="367082626621881" type="Choice44">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="0" name="Call function" sid="649693958788045" type="Function">
+                    <param id="0" name="Name">&quot;checkAnswer&quot;</param>
+                    <param id="1" name="Parameter {n}">TextChoice44.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="520730923960763">
+            <conditions>
+                <condition id="0" name="On function" sid="629925671344260" type="Function">
+                    <param id="0" name="Name">&quot;checkAnswer&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="201039007919987" type="System">
+                    <param id="0" name="Variable">timer4</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="489308731581760">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="848926936653401" type="System">
+                            <param id="0" name="Variable">correctAnswer4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Function.Param(0)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="131278171742345" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="721105320856391" type="System">
+                            <param id="0" name="Variable">score</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="361428431782666" type="TrueGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="483092372434091" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="112547430368556" type="Function">
+                            <param id="0" name="Name">&quot;loadQuestion&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="954665051315025" type="Audio">
+                            <param id="0" name="Audio file">true</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="118672461773399" type="TrueGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="727806119928347">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="913087262635805" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="755836335826518" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="659650890166637" type="FalseGame">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="453078862854958" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="369024429301245" type="Function">
+                            <param id="0" name="Name">&quot;loadQuestion&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                        <action id="0" name="Play" sid="415519701491013" type="Audio">
+                            <param id="0" name="Audio file">false</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;sound&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="566755602216854" type="FalseGame">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="233852494148574">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="411524211916837" type="System">
+                    <param id="0" name="Variable">timer4</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-6" name="Every X seconds" sid="688460453374327" type="System">
+                    <param id="0" name="Interval (seconds)">1.0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="304626912331840" type="System">
+                    <param id="0" name="Variable">timer4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="741093766211721">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="755100169183665" type="System">
+                            <param id="0" name="Variable">timer4</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="866844111349321" type="System">
+                            <param id="0" name="Seconds">0.5</param>
+                        </action>
+                        <action id="0" name="Call function" sid="146266549922776" type="Function">
+                            <param id="0" name="Name">&quot;loadQuestion&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="477303801195434">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="942166179457060" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="401893517806351" type="TextScore">
+                    <param id="0" name="Text">score</param>
+                </action>
+                <action id="0" name="Set text" sid="131983351505602" type="TextTimer4">
+                    <param id="0" name="Text">countdown4</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="173457259476962">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="831608756200583" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="769513503911499" type="System">
+                            <param id="0" name="Variable">countdown4</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="181378882268131">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="366321939389673" type="System">
+                                    <param id="0" name="Variable">countdown4</param>
+                                    <param id="1" name="Comparison">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-2" name="Go to layout" sid="690580818938601" type="System">
+                                    <param id="0" name="Layout">Score</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="264836270828761">
+            <conditions>
+                <condition id="3" name="On touched object" sid="752731948119067" type="Touch">
+                    <param id="0" name="Object">ExitGame4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="609736354860053" type="ExitGame4">
+                    <param id="0" name="Scale">0.98</param>
+                </action>
+                <action id="-16" name="Wait" sid="876731830014514" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="717721166819272" type="ExitGame4">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="312023266278801" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="245119334285632" type="System">
+                    <param id="0" name="Layout">Exit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="308938565120252">
+            <conditions>
+                <condition id="3" name="On touched object" sid="510157868838600" type="Touch">
+                    <param id="0" name="Object">BackGame4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="994594307570741" type="BackGame4">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="944939605543376" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="894446987091992" type="BackGame4">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="863276966388831" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="980400356420897" type="System">
+                    <param id="0" name="Layout">MenuMode</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

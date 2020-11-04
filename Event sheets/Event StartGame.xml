@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event StartGame</name>
+    <events>
+        <event-block sid="967242955865412">
+            <conditions>
+                <condition id="3" name="On touched object" sid="150557219621513" type="Touch">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="655517242915949" type="Start">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="565406491159584" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="964480851122014" type="Start">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="654838210946280" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="821754338866096" type="System">
+                    <param id="0" name="Layout">MenuMode</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="237726383447241">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="700220435884885" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="929781657308388" type="Mouse">
+                    <param id="0" name="Cursor style">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="674088851652618">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="803643170199389" type="Mouse">
+                    <param id="0" name="Object">Start</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set cursor style" sid="775010503991908" type="Mouse">
+                    <param id="0" name="Cursor style">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event Score</name>
+    <events>
+        <event-block sid="441075286570585">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="222732636601148" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="563682018988635" type="TextScore">
+                    <param id="0" name="Text">score</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="157275149529471">
+            <conditions>
+                <condition id="3" name="On touched object" sid="410220008923110" type="Touch">
+                    <param id="0" name="Object">ExitScore</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="366684017051831" type="ExitScore">
+                    <param id="0" name="Scale">0.98</param>
+                </action>
+                <action id="-16" name="Wait" sid="642426601188143" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="207580691913777" type="ExitScore">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="506488245606362" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="348222190298312" type="System">
+                    <param id="0" name="Layout">Exit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="790115810195139">
+            <conditions>
+                <condition id="3" name="On touched object" sid="520517513977771" type="Touch">
+                    <param id="0" name="Object">ButtonBackToMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="427588756065594" type="ButtonBackToMenu">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="794104268316363" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="650335004598681" type="ButtonBackToMenu">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="463505794139554" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="153341843475383" type="System">
+                    <param id="0" name="Layout">MenuMode</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

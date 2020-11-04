@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event MenuMode</name>
+    <events>
+        <event-block sid="436151888212993">
+            <conditions>
+                <condition id="3" name="On touched object" sid="373197902578951" type="Touch">
+                    <param id="0" name="Object">ButtonMenuQuiz1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="847727009363818" type="ButtonMenuQuiz1">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="156727165682310" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="248222574309598" type="ButtonMenuQuiz1">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="468347926635556" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="974331241721206" type="System">
+                    <param id="0" name="Layout">LoadingGame 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="851891115736980">
+            <conditions>
+                <condition id="3" name="On touched object" sid="705258133553892" type="Touch">
+                    <param id="0" name="Object">ButtonMenuQuiz2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="503898524600152" type="ButtonMenuQuiz2">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="684633128901417" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="727733409183384" type="ButtonMenuQuiz2">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="415044734085845" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="408361314701909" type="System">
+                    <param id="0" name="Layout">LoadingGame 2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="912165007153343">
+            <conditions>
+                <condition id="3" name="On touched object" sid="356406899743394" type="Touch">
+                    <param id="0" name="Object">ButtonMenuQuiz5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="895586021153124" type="ButtonMenuQuiz5">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="437463591633134" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="592232957617010" type="ButtonMenuQuiz5">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="271928635748647" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="355289396762243" type="System">
+                    <param id="0" name="Layout">LoadingGame 5</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="566352132996239">
+            <conditions>
+                <condition id="3" name="On touched object" sid="990734633089087" type="Touch">
+                    <param id="0" name="Object">ButtonMenuQuiz3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="454123290080349" type="ButtonMenuQuiz3">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="387871317809316" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="887275861521478" type="ButtonMenuQuiz3">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="702035765527973" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="885018823727852" type="System">
+                    <param id="0" name="Layout">LoadingGame 3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="707736876593385">
+            <conditions>
+                <condition id="3" name="On touched object" sid="459656556481124" type="Touch">
+                    <param id="0" name="Object">ButtonMenuQuiz4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="935920164347379" type="ButtonMenuQuiz4">
+                    <param id="0" name="Scale">0.95</param>
+                </action>
+                <action id="-16" name="Wait" sid="562747977191513" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action id="9" name="Set scale" sid="156473844092536" type="ButtonMenuQuiz4">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="348194928759293" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="845188026716279" type="System">
+                    <param id="0" name="Layout">LoadingGame 4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="878143819044345">
+            <conditions>
+                <condition id="3" name="On touched object" sid="519583227556339" type="Touch">
+                    <param id="0" name="Object">ExitGameMenu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="9" name="Set scale" sid="206324869742974" type="ExitGameMenu">
+                    <param id="0" name="Scale">0.98</param>
+                </action>
+                <action id="-16" name="Wait" sid="506063362478808" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="9" name="Set scale" sid="539243487739781" type="ExitGameMenu">
+                    <param id="0" name="Scale">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="390473749689638" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="426054128426515" type="System">
+                    <param id="0" name="Layout">Exit</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="477729616681323">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="403345708019075" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="382028618661212">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="210480734845141" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="825194308833212" type="Audio">
+                            <param id="0" name="Audio file">music</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="358228008348212">
+                    <conditions>
+                        <condition id="3" inverted="1" name="Is silent" sid="989754272798199" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Set silent" sid="575969438943839" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="207268141421554" type="ButtonSound">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="955910235662708">
+                    <conditions>
+                        <condition id="3" name="Is silent" sid="910923528615885" type="Audio" />
+                    </conditions>
+                    <actions>
+                        <action id="8" name="Set silent" sid="391851878889892" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="582083478725853" type="ButtonSound">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="739887493664770">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="473400873004811" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">ButtonSound</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="444880278978099">
+                    <conditions>
+                        <condition id="3" name="Compare frame" sid="607903695459988" type="ButtonSound">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Number">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="645190787375292" type="ButtonSound">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="941626470422604" type="Audio">
+                            <param id="0" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="371710492795671">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="808994311118052" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="294030908542994" type="ButtonSound">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="8" name="Set silent" sid="324621588739215" type="Audio">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
